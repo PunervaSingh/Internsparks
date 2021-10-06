@@ -4,47 +4,45 @@
 <link rel="stylesheet" href="{{url_for('static', filename='css/about.css')}}">
 {% endblock %}
 
-{% block content %}
-<!-- <h1>About Page</h1> -->
-<div class="container-fluid" style="padding: 30px 50px 80px;">
-    <!-- <h3>Money that you donate, is being used for the following causes:- </h3> -->
+{% block content %} 
+<div class="container-fluid about-main-div">
     <div class="row">
         <div class="col-lg-4">
             <div class="row inner-div">
                 <div class="col-lg-7">
-                    <h4 style="padding-top: 20px;">Providing free education</h4>
+                    <h4 class="heading4">Providing free education</h4>
                     <p>
                         We provide free education and resources to all the children who can't afford it.
                     </p>
                 </div>
                 <div class="col-lg-5">
-                    <img src="{{url_for('static', filename='img/edu.png')}}" style="height: 100%;width: 100%;" alt="">
+                    <img class="about-img" src="{{url_for('static', filename='img/edu.png')}}" alt="">
                 </div>
             </div>
         </div>
         <div class="col-lg-4">
             <div class="row inner-div2">
                 <div class="col-lg-7">
-                    <h4 style="padding-top: 20px;">Helping elderly in old-age home</h4>
+                    <h4 class="heading4">Helping elderly in old-age home</h4>
                     <p>
                         We provide all the necessities to the elderly in the old-age home.
                     </p>
                 </div>
                 <div class="col-lg-5">
-                    <img src="{{url_for('static', filename='img/old-people.png')}}" style="height: 100%;width: 100%;" alt="">
+                    <img class="about-img" src="{{url_for('static', filename='img/old-people.png')}}" alt="">
                 </div>
             </div>
         </div>
         <div class="col-lg-4">
             <div class="row inner-div3">
                 <div class="col-lg-7">
-                    <h4 style="padding-top: 20px;">Rebuilt natural disaster areas</h4>
+                    <h4 class="heading4">Rebuilt natural disaster areas</h4>
                     <p>
                         We rebulit the places which are damaged by the natural disasters.
                     </p>
                 </div>
                 <div class="col-lg-5">
-                    <img src="{{url_for('static', filename='img/rebuild.png')}}" style="height: 100%;width: 100%;" alt="">
+                    <img class="about-img" src="{{url_for('static', filename='img/rebuild.png')}}" alt="">
                 </div>
             </div>
         </div>
@@ -53,39 +51,39 @@
         <div class="col-lg-4">
             <div class="row inner-div">
                 <div class="col-lg-7">
-                    <h4 style="padding-top: 20px;">Inhibiting hunger</h4>
+                    <h4 class="heading4">Inhibiting hunger</h4>
                     <p>
                         We provide free food to the people who malnourished and can't afford it.
                     </p>
                 </div>
                 <div class="col-lg-5">
-                    <img src="{{url_for('static', filename='img/hunger.png')}}" style="height: 100%;width: 100%;" alt="">
+                    <img class="about-img" src="{{url_for('static', filename='img/hunger.png')}}" alt="">
                 </div>
             </div>
         </div>
         <div class="col-lg-4">
             <div class="row inner-div2">
                 <div class="col-lg-7">
-                    <h4 style="padding-top: 20px;">Buying clothes</h4>
+                    <h4 class="heading4">Buying clothes</h4>
                     <p>
                         We give clothes to poor and neady people who are not economically weak.
                     </p>
                 </div>
                 <div class="col-lg-5">
-                    <img src="{{url_for('static', filename='img/clothes.png')}}" style="height: 100%;width: 100%;" alt="">
+                    <img class="about-img" src="{{url_for('static', filename='img/clothes.png')}}" alt="">
                 </div>
             </div>
         </div>
         <div class="col-lg-4">
             <div class="row inner-div3">
                 <div class="col-lg-7">
-                    <h4 style="padding-top: 20px;">Paying medical bills</h4>
+                    <h4 class="heading4">Paying medical bills</h4>
                     <p>
                         We pay medical bills and provide free medicine along with proper medicare.
                     </p>
                 </div>
                 <div class="col-lg-5">
-                    <img src="{{url_for('static', filename='img/medical.png')}}" style="height: 100%;width: 100%;" alt="">
+                    <img class="about-img" src="{{url_for('static', filename='img/medical.png')}}" alt="">
                 </div>
             </div>
         </div>
@@ -94,202 +92,44 @@
         <div class="col-lg-4">
             <div class="row inner-div">
                 <div class="col-lg-7">
-                    <h4 style="padding-top: 20px;">Providing shelter</h4>
+                    <h4 class="heading4">Providing shelter</h4>
                     <p>
                         We provide shelter to homeless people along with all the other necessities.
                     </p>
                 </div>
                 <div class="col-lg-5">
-                    <img src="{{url_for('static', filename='img/home.png')}}" style="height: 100%;width: 100%;" alt="">
+                    <img class="about-img" src="{{url_for('static', filename='img/home.png')}}" alt="">
                 </div>
             </div>
         </div>
         <div class="col-lg-4">
             <div class="row inner-div2">
                 <div class="col-lg-7">
-                    <h4 style="padding-top: 20px;">cleaner environment</h4>
+                    <h4 class="heading4">cleaner environment</h4>
                     <p>
                         We set monthly drives to clean area in different parts of our country.
                     </p>
                 </div>
                 <div class="col-lg-5">
-                    <img src="{{url_for('static', filename='img/cleaning.png')}}" style="height: 100%;width: 100%;" alt="">
+                    <img class="about-img" src="{{url_for('static', filename='img/cleaning.png')}}" alt="">
                 </div>
             </div>
         </div>
         <div class="col-lg-4">
             <div class="row inner-div3">
                 <div class="col-lg-7">
-                    <h4 style="padding-top: 20px;">Animal Shelters</h4>
+                    <h4 class="heading4">Animal Shelters</h4>
                     <p>
                         We provide shelter, food and medical care to the rescued animals.
                     </p>
                 </div>
                 <div class="col-lg-5">
-                    <img src="{{url_for('static', filename='img/animal.png')}}" style="height: 100%;width: 100%;" alt="">
+                    <img class="about-img" src="{{url_for('static', filename='img/animal.png')}}" alt="">
                 </div>
             </div>
         </div>
     </div>
 </div>
-<footer class="site-footer container-fluid" style="padding: 0;background-color: #2c285f;color: #fff;"> 
-    <div class="wrap-size-lg container-fluid" style="padding: 50px;"> 
-        <div class="row grid-spacing-sm"> 
-            <div class="footer-div col-lg-6 col-md-6 col-sm-12"> 
-              <h2 style="font-size: 30px;color: white;font-size: 45px;text-decoration: underline;margin-bottom: 20px;">Internsparks</h2> 
-                <ul class="footer-nav"> 
-                    <li> 
-                      <!-- <p style="padding: 10px 0;">“The purpose of life is not to be happy. It is to be useful, to be honorable, to be compassionate, to have it make some difference that you have lived and lived well.” ― Ralph Waldo Emerson</p> -->
-                      <p style="padding: 10px 0;">“The best way to not feel hopeless is to get up and do something. Don’t wait for good things to happen to you. If you go out and make some good things happen, you will fill the world with hope, you will fill yourself with hope.” ― Barack Obama</p>
-                      <!-- <p style="padding: 10px 0;">“No one is useless in this world who lightens the burdens of another.” ― Charles Dickens</p> -->
-                      <!-- <p style="padding: 10px 0;">“No one has ever become poor by giving.” ― Anne Frank</p> -->
-                    </li> 
-                </ul> 
-                <ul class="footer-nav" style="display: flex;"> 
-                    <li> 
-                        <a href="#"><i class="fab fa-facebook-square" style="font-size: 40px;color: white;margin: 0 20px 0 0;"></i></a> 
-                    </li> 
-                    <li> 
-                        <a href="#"><i class="fab fa-instagram" style="font-size: 40px;color: white;margin: 0 20px;"></i></a> 
-                    </li> 
-                    <li> 
-                        <a href="#"><i class="fab fa-twitter-square" style="font-size: 40px;color: white;margin: 0 20px;"></i> </a> 
-                    </li> 
-                    <li> 
-                        <a href="#"><i class="fab fa-linkedin" style="font-size: 40px;color: white;margin: 0 20px;"></i></a> 
-                    </li> 
-                </ul> 
-            </div> 
-            <div class="footer-div col-lg-4 col-md-3 col-sm-6" style="padding-left: 5%;"> 
-                <h5 style="color: white;margin-top: 30px; margin-bottom: 30px;">CONTACT INFO</h5>
-                <ul class="footer-nav"> 
-                    <!-- <li> 
-                        <a rel="nofollow noreferrer" target="_blank" href="#"> About us </a> 
-                    </li>
-                    <li> 
-                        <a rel="nofollow noreferrer" href="#"> Email us </a> 
-                    </li> 
-                    <li> 
-                        <a href="#"> Github Repository </a> 
-                    </li>  -->
-                    <li> 
-                        <span class="contact-icon"><i class="fas fa-map-marker-alt"></i></span>
-                        <span class="contact-desc">XYZ main road Kashmere gate, Delhi, 110012</span>
-                    </li>
-                    <li> 
-                        <span class="contact-icon"><i class="fas fa-at"></i></span>
-                        <a class="contact-desc" href="mailto:punerva21@gmail.com">lorem@gmail.com</a>
-                    </li>  
-                    <li> 
-                        <span class="contact-icon"><i class="fas fa-phone-volume"></i></span>
-                        <span class="contact-desc">947-986-6XXX</span> 
-                    </li>
-                </ul> 
-            </div> 
-            <div class="footer-div col-lg-2 col-md-3 col-sm-6"> 
-                <h5 style="color: white;margin-top: 30px; margin-bottom: 30px;">QUICK ACCESS</h5>
-                <ul class="footer-nav"> 
-                    <!-- <li> 
-                        <a rel="nofollow noreferrer" target="_blank" href="#"> About us </a> 
-                    </li>
-                    <li> 
-                        <a rel="nofollow noreferrer" href="#"> Email us </a> 
-                    </li> 
-                    <li> 
-                        <a href="#"> Github Repository </a> 
-                    </li>  -->
-                    <li> 
-                        <a rel="nofollow noreferrer" target="_blank" href="{{url_for('guide')}}"> Guide </a> 
-                    </li>
-                    <li> 
-                        <a href="{{url_for('faq')}}"> FAQ's </a> 
-                    </li>  
-                    <li> 
-                        <a href="#"> Github Repository </a> 
-                    </li>
-                </ul>
-              <!-- <h5 style="color: white;margin-top: 30px; margin-bottom: 30px;">JOIN OUR SOCILA MEDIA</h5> -->
-              <!-- <ul class="footer-nav" style="display: flex;"> 
-                <li> 
-                    <a href="#"><i class="fab fa-facebook-square" style="font-size: 40px;color: white;margin: 0 20px 0 0;"></i></a> 
-                </li> 
-                <li> 
-                    <a href="#"><i class="fab fa-instagram" style="font-size: 40px;color: white;margin: 0 20px;"></i></a> 
-                </li> 
-                <li> 
-                    <a href="#"><i class="fab fa-twitter-square" style="font-size: 40px;color: white;margin: 0 20px;"></i> </a> 
-                </li> 
-                <li> 
-                    <a href="#"><i class="fab fa-linkedin" style="font-size: 40px;color: white;margin: 0 20px;"></i></a> 
-                </li> 
-            </ul>   -->
-            </div>
-        </div>
-    </div> 
-  </footer>
-<!-- <footer class="site-footer container-fluid" style="padding: 0;background-color: #a5a1e4;padding: 0 40px;">
-    <div class="container-fluid">
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="row">
-                    <div class="col-lg-9">
-                        <h1 style="padding-top: 20px;">Let's help together</h1>
-                        <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis mollitia architecto dolorum soluta voluptate iure quidem molestiae exercitationem! Repellendus voluptatibus quasi neque fuga dicta, consequatur sapiente ipsam recusandae facilis.
-                        </p>
-                    </div>
-                    <div class="col-lg-3">
-                        <img src="{{url_for('static', filename='img/donate.png')}}" style="height: 250px;width: 300px;" alt="">
-                    </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="row">
-                    <div class="col-lg-9">
-                        <h1 style="padding-top: 20px;">Make A donation</h1>
-                        <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis mollitia architecto dolorum soluta voluptate iure quidem molestiae exercitationem! Repellendus voluptatibus quasi neque fuga dicta, consequatur sapiente ipsam recusandae facilis.
-                        </p>
-                    </div>
-                    <div class="col-lg-3">
-                        <img src="{{url_for('static', filename='img/donate2.png')}}" style="height: 250px;width: 300px;" alt="">
-                    </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="row">
-                    <div class="col-lg-9">
-                        <h1 style="padding-top: 20px;">It's easy to help</h1>
-                        <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis mollitia architecto dolorum soluta voluptate iure quidem molestiae exercitationem! Repellendus voluptatibus quasi neque fuga dicta, consequatur sapiente ipsam recusandae facilis.
-                        </p>
-                    </div>
-                    <div class="col-lg-3">
-                        <img src="{{url_for('static', filename='img/donate3.png')}}" style="height: 250px;width: 300px;" alt="">
-                    </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        <div class="row">
-            <div class="col-lg-9">
-                <h1 style="padding-top: 20px;">Let's help together</h1>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis mollitia architecto dolorum soluta voluptate iure quidem molestiae exercitationem! Repellendus voluptatibus quasi neque fuga dicta, consequatur sapiente ipsam recusandae facilis.
-                </p>
-            </div>
-            <div class="col-lg-3">
-                <img src="{{url_for('static', filename='img/donate.png')}}" style="height: 100%;width: 75%;" alt="">
-            </div>
-        </div>
-    </div>
-</footer> -->
 <script>
     $('inner-div').animate({left: 0});
 </script>

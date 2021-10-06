@@ -75,19 +75,12 @@ body{
     height: 10px;
     border-radius: 50%;
     margin-left: auto;
-  }
-  .carousel-indicators .active{
-      background-color: #ff4449;
-  }
-
-/* .liquid{
-    background: url('../img/wave2.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-} */
+}
+.carousel-indicators .active{
+    background-color: #ff4449;
+}
 
 .inline-photo {
-    /* box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2); */
     opacity: 0;
     transform: translateY(50px) rotateZ(-5deg);
     transition: transform 4s .25s cubic-bezier(0,1,.3,1),
@@ -100,7 +93,7 @@ body{
     transform: rotateY(0);
 }
 
-footer ul{
+/* footer ul{
     list-style: none;
 }
 
@@ -115,7 +108,7 @@ footer ul.footer-nav a{
 
 footer ul.footer-nav li{
     padding: 5px 0;
-}
+} */
 
 .home-subdiv{
     padding: 40px;

@@ -1,7 +1,7 @@
 keyid = 'rzp_test_72b14Bb260520s'
 keysecret = 'BpIsSYWreMjd2bN4BRKamo5Q'
 
-from flask import Flask, render_template, request, redirect, session, url_for
+from flask import Flask, render_template, request, redirect, session, url_for, flash
 import razorpay
 from flask_sqlalchemy import SQLAlchemy
 
@@ -51,7 +51,8 @@ def contact():
         data = Contact(name, email, mobile, msg)
         db.session.add(data)
         db.session.commit()
-        return render_template('home.html', message='Inquer message has been sent successfully...')
+        flash('Inquer message has been sent successfully...', "success")
+        return render_template('home.html')
     return render_template('contact.html')
 
 @app.route('/about')

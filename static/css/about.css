@@ -17,6 +17,19 @@ body{
     text-decoration: none;
 }
 
+.heading4{
+    padding-top: 20px;
+}
+
+.about-main-div{
+    padding: 30px 50px 80px;
+}
+
+.about-img{
+    height: 100%;
+    width: 100%;
+}
+
 .margin-div{
     margin-top: 90px;
 }
@@ -44,31 +57,6 @@ body{
     position: relative;
     animation: mymove3 1s 1;
 }
-
-footer ul{
-    list-style: none;
-}
-
-footer ul.footer-nav{
-    padding: 0;
-}
-
-footer ul.footer-nav a{
-    color: white;
-    text-decoration: none;
-}
-
-footer ul.footer-nav li{
-    padding: 5px 0;
-}
-
-/* .inner-div {
-    width: 100px;
-    height: 100px;
-    background: red;
-    position: relative;
-    animation: mymove 2s 1;
-} */
 
 @keyframes mymove {
     from {transform: translateX(-100px); opacity: 0}

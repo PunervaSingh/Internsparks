@@ -26,23 +26,6 @@ body{
     text-decoration: none;
 }
 
-footer ul{
-    list-style: none;
-}
-
-footer ul.footer-nav{
-    padding: 0;
-}
-
-footer ul.footer-nav a{
-    color: white;
-    text-decoration: none;
-}
-
-footer ul.footer-nav li{
-    padding: 5px 0;
-}
-
 .guide-image{
     height: 100%;
     width: 100%;
@@ -130,32 +113,10 @@ footer ul.footer-nav li{
     padding-top: 200px;
 }
 
-.book-img{
-    height: 300px; 
-    width: 200px;
-}
-
-
 .wrap-size-lg{
     margin: 0;
     width: 100%;
     padding: 0;
-}
-
-.footer-link {
-    color: white;
-    line-height: 2.2;
-}
-
-.footer-link:hover {
-    color: white;
-    text-decoration: none;
-}
-
-.footer-icon{
-    font-size: 40px;
-    color: white;
-    margin: 0 20px 0 0;
 }
 
 .active {
@@ -196,7 +157,6 @@ footer ul.footer-nav li{
 }
 
 .inline-photo {
-    /* box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2); */
     opacity: 0;
     transform: translateY(50px) rotateZ(-5deg);
     transition: transform 2s .25s cubic-bezier(0,1,.3,1),
@@ -208,29 +168,6 @@ footer ul.footer-nav li{
     opacity: 1;
     transform: rotateY(0);
 }
-
-/* .side-bar ul{
-    list-style: none;
-}
-
-.side-bar ul li{
-    padding: 10px 0;
-}
-
-.side-bar ul li a{
-    color: #413c86;
-    font-size: 15px;
-}
-
-.side-bar ul li:hover{
-    background: #413c86;
-    color: white;
-}
-
-.side-bar ul li a:hover{
-    color: #fff;
-    text-decoration: none;
-} */
 
 @media (max-width: 991px){
     .make-me-sticky{

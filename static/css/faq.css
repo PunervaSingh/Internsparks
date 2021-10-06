@@ -78,21 +78,8 @@ h2{
     outline: none;
 }
 
-footer ul{
-    list-style: none;
-}
-
-footer ul.footer-nav{
-    padding: 0;
-}
-
-footer ul.footer-nav a{
-    color: white;
-    text-decoration: none;
-}
-
-footer ul.footer-nav li{
-    padding: 5px 0;
+footer{
+    margin-top: 150px;
 }
 
 

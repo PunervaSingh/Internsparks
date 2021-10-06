@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,53 +8,26 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="icon" href="{{url_for('static', filename='img/logo2.png')}}">
-    <!-- Owl-Carousel -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
         integrity="sha256-UhQQ4fxEeABh4JrcmAJ1+16id/1dnlOEVCFOxDef9Lw=" crossorigin="anonymous" />
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
         integrity="sha256-kksNxjDRxd/5+jGurZUJd1sdR2v+ClrCl3svESBaJqw=" crossorigin="anonymous" />
-    <!-- Font Awesome CDN -->
     <script src="https://kit.fontawesome.com/23412c6a8d.js"></script>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/index.css')}}">
     <title>Internsparks</title>
     {% block head %}
     {% block title %}{% endblock %}
     {% endblock %}
-    <style>
-        nav {
-            position: -webkit-sticky;
-            position: sticky;
-            /* sticky or fixed are fine */
-            position: fixed;
-            top: 0;
-            width: 100%;
-            /* background: linear-gradient(to bottom, #000, #0003 70%,#0000); background when scroll is in the top */
-            transition: background .2s; /* control how smooth the background changes */
-        }
-
-        nav.scrolled {
-            background: #fff;
-            box-shadow: 2px 2px 5px #aaa9a9;
-        }
-
-        nav.scrolled #nav-heading{
-            color: #ff4449;
-        }
-        nav.scrolled #nav-link{
-            color: #413c86;
-        }
-    </style>
 </head>
 <body>
-    <nav class="navbar fixed-top bg-none navbar-expand-lg nav-fixed" style="padding: 10px;">
-        <img src="{{url_for('static', filename='img/logo.png')}}" style="height: 50px; width: 50px; border-radius: 50%; margin: 0 20px;" alt="">
+    <nav class="navbar fixed-top bg-none navbar-expand-lg nav-fixed">
+        <img src="{{url_for('static', filename='img/logo.png')}}" class="icon" alt="">
 	    <h1 class="nav-link-icon" id="nav-heading"> Internsparks </h1>  
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" style="background: #413c85;">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse " id="navbarTogglerDemo02">
-        <!-- <img src="{{url_for('static', filename='img/logo.png')}}" style="height: 50px; width: 50px; border-radius: 50%; margin-left: 40px;" alt="">
-	    <h1 class="nav-link-icon" id="nav-heading"> Internsparks </h1>   -->
             <ul class="navbar-nav nav ml-auto" style="padding: 0;">
                 <li class="nav-item"><a id="nav-link" href="{{url_for('index')}}">Home</a></li>
                 <li class="nav-item"><a id="nav-link" href="{{url_for('about')}}">About</a> </li>
@@ -79,19 +52,67 @@
       {% block content %}
 
       {% endblock %}
-    <script>
-        var navbar = document.querySelector('nav')
 
-            window.onscroll = function() {
-
-            // pageYOffset or scrollY
-            if (window.pageYOffset > 0) {
-                navbar.classList.add('scrolled')
-            } else {
-                navbar.classList.remove('scrolled')
-            }
-        }
-    </script>
+      <footer class="site-footer container-fluid"> 
+        <div class="wrap-size-lg container-fluid" style="padding: 50px;"> 
+            <div class="row grid-spacing-sm"> 
+                <div class="footer-div col-lg-6 col-md-6 col-sm-12"> 
+                  <h2 class="footer-heading">Internsparks</h2> 
+                    <ul class="footer-nav"> 
+                        <li> 
+                          <p style="padding: 10px 0;">“The best way to not feel hopeless is to get up and do something. Don’t wait for good things to happen to you. If you go out and make some good things happen, you will fill the world with hope, you will fill yourself with hope.” ― Barack Obama</p>
+                        </li> 
+                    </ul> 
+                    <ul class="footer-nav" style="display: flex;"> 
+                        <li> 
+                            <a href="https://facebook.com"><i class="custom-icon fab fa-facebook-square" style="margin-left: 0;"></i></a> 
+                        </li> 
+                        <li> 
+                            <a href="https://instagram.com"><i class="custom-icon fab fa-instagram"></i></a> 
+                        </li> 
+                        <li> 
+                            <a href="https://twitter.com"><i class="custom-icon fab fa-twitter-square"></i> </a> 
+                        </li> 
+                        <li> 
+                            <a href="https://linkedin.com"><i class="custom-icon fab fa-linkedin"></i></a> 
+                        </li> 
+                    </ul>  
+                </div> 
+                <div class="footer-div col-lg-4 col-md-3 col-sm-6" style="padding-left: 5%;"> 
+                    <h5 class="footer-subheading">CONTACT INFO</h5>
+                    <ul class="footer-nav"> 
+                        <li> 
+                            <span class="contact-icon"><i class="fas fa-map-marker-alt"></i></span>
+                            <span class="contact-desc">XYZ main road Kashmere gate, Delhi, 110012</span>
+                        </li>
+                        <li> 
+                            <span class="contact-icon"><i class="fas fa-at"></i></span>
+                            <a class="contact-desc" href="mailto:punerva21@gmail.com">lorem@gmail.com</a>
+                        </li>  
+                        <li> 
+                            <span class="contact-icon"><i class="fas fa-phone-volume"></i></span>
+                            <span class="contact-desc">947-986-6XXX</span> 
+                        </li>
+                    </ul> 
+                </div> 
+                <div class="footer-div col-lg-2 col-md-3 col-sm-6"> 
+                    <h5 class="footer-subheading">QUICK ACCESS</h5>
+                    <ul class="footer-nav">
+                        <li> 
+                            <a rel="nofollow noreferrer" href="{{url_for('guide')}}"> Guide </a> 
+                        </li>
+                        <li> 
+                            <a href="{{url_for('faq')}}"> FAQ's </a> 
+                        </li>  
+                        <li> 
+                            <a target="_blank" href="https://github.com/PunervaSingh/Internsparks"> Github Repository </a> 
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div> 
+      </footer>
+    <script src="{{url_for('static', filename='js/index.js')}}"></script>
     <script async src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script async src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script async  src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
