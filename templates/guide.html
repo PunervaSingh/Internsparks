@@ -1,0 +1,284 @@
+{% extends "base.html" %}
+
+{% block head %}
+<link rel="stylesheet" href="{{url_for('static', filename='css/guide.css')}}">
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-3">
+            <div class="sidebar-item sidebar">
+              <div class="make-me-sticky">
+                  <div style="background-color: #cbc7ff;padding: 20px 0;">
+                      <h1 class="sidebar-heading">Quick Access</h1>
+                      <ul class="nav_list">
+                          <li class="list-item list-test" data-tooltip="Codepen">
+                              <a href="#home" class="genre-element">
+                                  <i class="fas fa-archive fa-2x"></i>
+                                  <span class="text">Home Page</span>
+                                </a>
+                            </li>
+                            
+                            <li class="list-item" data-tooltip="Opera">
+                                <a href="#donation" class="genre-element">
+                                    <i class="fas fa-archive fa-2x"></i>
+                                    <span class="text">Donation process</span>
+                                </a>
+                            </li>
+                            
+                            <li class="list-item" data-tooltip="Firefox">
+                                <a href="#navigation" class="genre-element">
+                                    <i class="fas fa-archive fa-2x"></i>
+                                    <span class="text">Navigation Bar</span>
+                                </a>
+                            </li>
+                            <li class="list-item" data-tooltip="Linux">
+                                <a href="#footer" class="genre-element">
+                                    <i class="fas fa-archive fa-2x"></i>
+                                    <span class="text">Footer Page</span>
+                                </a>
+                            </li>
+                            <li class="list-item" data-tooltip="Facebook">
+                                <a href="#about" class="genre-element">
+                                    <i class="fas fa-archive fa-2x"></i>
+                                    <span class="text">About page</span>
+                                </a>
+                            </li>
+                            <li class="list-item" data-tooltip="CSS3">
+                                <a href="#contact" class="genre-element">
+                                    <i class="fas fa-archive fa-2x"></i>
+                                    <span class="text">Contact Page</span>
+                                </a>
+                            </li>
+                            <li class="list-item" data-tooltip="Python">
+                                <a href="#faq" class="genre-element">
+                                    <i class="fas fa-archive fa-2x"></i>
+                                    <span class="text">FAQ Page</span>
+                                </a>
+                            </li>
+                            <li class="list-item" data-tooltip="Settings">
+                                <a href="#guide" class="genre-element">
+                                    <i class="fas fa-archive fa-2x"></i>
+                                    <span class="text">Guide</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+              </div>
+            </div>
+        </div>
+        <!-- <div class="col-lg-3" style="margin-top: 150px;">
+            <div class="side-bar" style="padding: 40px;background-color: #cbc7ff;">
+                <h1>Side bar</h1>
+                <ul>
+                    <li style="margin-top: 30px;"><a href=""> Home Page</a></li>
+                    <li> <a href=""> Donation process</a> </li>
+                    <li><a href=""> Navigation Bar</a></li>
+                    <li><a href=""> Footer Page</a></li>
+                    <li><a href=""> About page</a></li>
+                    <li><a href=""> Contact Page</a></li>
+                    <li><a href=""> FAQ Page</a></li>
+                    <li><a href=""> Guide</a></li>
+                </ul>
+            </div>
+        </div> -->
+        <div class="col-lg-9" style="margin-top: 150px;padding: 0 50px 10%;">
+            <h1 class="heading1">Step by Step</h1>
+            <h1 class="heading2">Guide To Intersparks</h1>
+            <!-- <p>Easy access to setting daily or weekly reminders as per your schedule. Receive reminders via email for convenience. A platform keeping check on your daily/weekly/monthly expenditures and creating a statistics for the same. Receive financial advice and interact with other people on the community built platform.</p> -->
+            <div>
+                <h2 id="home">Home Page</h2>
+                <img src="{{url_for('static', filename='img/main.png')}}" class="guide-image inline-photo show-on-scroll" alt="">
+                <p>When you visit our site, the first page that will be visible to you is the home page as shown above. </p>
+            </div>
+                
+            <div>
+                <h2 id="donation">Donation Process</h2>            
+                <p>For making donation, you will have to click on the 'Donate Now' button given on home page.</p>
+                <p>Follow the steps given below to make donation successfully.</p>
+                <ol>
+                    <li>When you click on the button, a payment box pops up. Fill amount that you want to donate and click on next.</li>
+                    <li>Fill the required fields with correct information and then click on 'Proceed to Pay'.</li>
+                    <li>Click the preferable payment type and pay click on pay button given below.</li>
+                    <li>Once you pay the amount, a message will will appear on your screen confirming if the payment was successful or not.</li>
+                    <li>You will also receive receipt of the transaction on your email id.</li>
+                </ol>
+            </div>
+            
+            <div>
+                <h2 id="navigation">Navigation Bar</h2>
+                <img src="{{url_for('static', filename='img/nav.png')}}" class="guide-image inline-photo show-on-scroll" style="height: 50px;box-shadow: 5px 5px 10px #bbb9b9;" alt="">
+                <p>On all the pages at the top you will be able to see navigation bar to access other pages easily.</p>
+            </div>
+            
+            <div>
+                <h2 id="footer">Footer</h2>
+                <img src="{{url_for('static', filename='img/footer.png')}}" class="guide-image inline-photo show-on-scroll" style="height: 170px;box-shadow: 5px 5px 10px #bbb9b9;" alt="">
+                <p>Footer is provided on the home page and the about page at the bottom to provide you with the quick links. A quick link to the guide is also provide in footer so that you can easily access it from other pages. 'FAQ's' link will take you to the frequently asked questions. You can visit our social media sites and follow us by clicking on the given icons.</p>
+            </div>
+            
+            <div>
+                <h2 id="about">About Page</h2>
+                <img src="{{url_for('static', filename='img/about.png')}}" class="guide-image inline-photo show-on-scroll" alt="">
+                <p>On the about page, you will see in what fields we work on.</p>
+            </div>
+            
+            <div>
+                <h2 id="contact">Contact Page</h2>
+                <img src="{{url_for('static', filename='img/contact.png')}}" class="guide-image inline-photo show-on-scroll" alt="">
+                <p>On the contact page, you can sent any message that you have for us. It can be related to anything such as complaint of a bug, a motivational message, an inquery, etc.</p>
+            </div>
+            
+            <div>
+                <h2 id="faq">FAQ Page</h2>
+                <img src="{{url_for('static', filename='img/faq.png')}}" class="guide-image inline-photo show-on-scroll" alt="">
+                <p>On FAQ page, you will be able to see alll the questions which are frequently asked by the user regarding Internsparks.</p>
+            </div>
+            
+            <div>
+                <h2 id="guide">Guide Page</h2>
+                <img src="{{url_for('static', filename='img/guide.png')}}" class="guide-image inline-photo show-on-scroll" alt="">
+                <p>The guide page is the page you are currently on which guides and help you to access the site easily.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="site-footer container-fluid" style="padding: 0;background-color: #2c285f;color: #fff;"> 
+    <div class="wrap-size-lg container-fluid" style="padding: 50px;"> 
+        <div class="row grid-spacing-sm"> 
+            <div class="footer-div col-lg-6 col-md-6 col-sm-12"> 
+              <h2 style="font-size: 30px;color: white;font-size: 45px;text-decoration: underline;margin-bottom: 20px;">Internsparks</h2> 
+                <ul class="footer-nav"> 
+                    <li> 
+                      <!-- <p style="padding: 10px 0;">“The purpose of life is not to be happy. It is to be useful, to be honorable, to be compassionate, to have it make some difference that you have lived and lived well.” ― Ralph Waldo Emerson</p> -->
+                      <p style="padding: 10px 0;">“The best way to not feel hopeless is to get up and do something. Don’t wait for good things to happen to you. If you go out and make some good things happen, you will fill the world with hope, you will fill yourself with hope.” ― Barack Obama</p>
+                      <!-- <p style="padding: 10px 0;">“No one is useless in this world who lightens the burdens of another.” ― Charles Dickens</p> -->
+                      <!-- <p style="padding: 10px 0;">“No one has ever become poor by giving.” ― Anne Frank</p> -->
+                    </li> 
+                </ul> 
+                <ul class="footer-nav" style="display: flex;"> 
+                    <li> 
+                        <a href="#"><i class="fab fa-facebook-square" style="font-size: 40px;color: white;margin: 0 20px 0 0;"></i></a> 
+                    </li> 
+                    <li> 
+                        <a href="#"><i class="fab fa-instagram" style="font-size: 40px;color: white;margin: 0 20px;"></i></a> 
+                    </li> 
+                    <li> 
+                        <a href="#"><i class="fab fa-twitter-square" style="font-size: 40px;color: white;margin: 0 20px;"></i> </a> 
+                    </li> 
+                    <li> 
+                        <a href="#"><i class="fab fa-linkedin" style="font-size: 40px;color: white;margin: 0 20px;"></i></a> 
+                    </li> 
+                </ul> 
+            </div> 
+            <div class="footer-div col-lg-4 col-md-3 col-sm-6" style="padding-left: 5%;"> 
+                <h5 style="color: white;margin-top: 30px; margin-bottom: 30px;">CONTACT INFO</h5>
+                <ul class="footer-nav"> 
+                    <!-- <li> 
+                        <a rel="nofollow noreferrer" target="_blank" href="#"> About us </a> 
+                    </li>
+                    <li> 
+                        <a rel="nofollow noreferrer" href="#"> Email us </a> 
+                    </li> 
+                    <li> 
+                        <a href="#"> Github Repository </a> 
+                    </li>  -->
+                    <li> 
+                        <span class="contact-icon"><i class="fas fa-map-marker-alt"></i></span>
+                        <span class="contact-desc">XYZ main road Kashmere gate, Delhi, 110012</span>
+                    </li>
+                    <li> 
+                        <span class="contact-icon"><i class="fas fa-at"></i></span>
+                        <a class="contact-desc" href="mailto:punerva21@gmail.com">lorem@gmail.com</a>
+                    </li>  
+                    <li> 
+                        <span class="contact-icon"><i class="fas fa-phone-volume"></i></span>
+                        <span class="contact-desc">947-986-6XXX</span> 
+                    </li>
+                </ul> 
+            </div> 
+            <div class="footer-div col-lg-2 col-md-3 col-sm-6"> 
+                <h5 style="color: white;margin-top: 30px; margin-bottom: 30px;">QUICK ACCESS</h5>
+                <ul class="footer-nav"> 
+                    <!-- <li> 
+                        <a rel="nofollow noreferrer" target="_blank" href="#"> About us </a> 
+                    </li>
+                    <li> 
+                        <a rel="nofollow noreferrer" href="#"> Email us </a> 
+                    </li> 
+                    <li> 
+                        <a href="#"> Github Repository </a> 
+                    </li>  -->
+                    <li> 
+                        <a rel="nofollow noreferrer" target="_blank" href="{{url_for('guide')}}"> Guide </a> 
+                    </li>
+                    <li> 
+                        <a href="{{url_for('faq')}}"> FAQ's </a> 
+                    </li>  
+                    <li> 
+                        <a href="#"> Github Repository </a> 
+                    </li>
+                </ul>
+              <!-- <h5 style="color: white;margin-top: 30px; margin-bottom: 30px;">JOIN OUR SOCILA MEDIA</h5> -->
+              <!-- <ul class="footer-nav" style="display: flex;"> 
+                <li> 
+                    <a href="#"><i class="fab fa-facebook-square" style="font-size: 40px;color: white;margin: 0 20px 0 0;"></i></a> 
+                </li> 
+                <li> 
+                    <a href="#"><i class="fab fa-instagram" style="font-size: 40px;color: white;margin: 0 20px;"></i></a> 
+                </li> 
+                <li> 
+                    <a href="#"><i class="fab fa-twitter-square" style="font-size: 40px;color: white;margin: 0 20px;"></i> </a> 
+                </li> 
+                <li> 
+                    <a href="#"><i class="fab fa-linkedin" style="font-size: 40px;color: white;margin: 0 20px;"></i></a> 
+                </li> 
+            </ul>   -->
+            </div>
+        </div>
+    </div> 
+  </footer>
+  <script>
+    // Detect request animation frame
+var scroll = window.requestAnimationFrame ||
+           // IE Fallback
+           function(callback){ window.setTimeout(callback, 1000/60)};
+var elementsToShow = document.querySelectorAll('.show-on-scroll'); 
+
+function loop() {
+
+  Array.prototype.forEach.call(elementsToShow, function(element){
+    if (isElementInViewport(element)) {
+      element.classList.add('is-visible');
+    } else {
+      element.classList.remove('is-visible');
+    }
+  });
+
+  scroll(loop);
+}
+
+// Call the loop for the first time
+loop();
+
+// Helper function from: http://stackoverflow.com/a/7557433/274826
+function isElementInViewport(el) {
+// special bonus for those using jQuery
+if (typeof jQuery === "function" && el instanceof jQuery) {
+  el = el[0];
+}
+var rect = el.getBoundingClientRect();
+return (
+  (rect.top <= 0
+    && rect.bottom >= 0)
+  ||
+  (rect.bottom >= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.top <= (window.innerHeight || document.documentElement.clientHeight))
+  ||
+  (rect.top >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
+);
+}
+</script>
+{% endblock %}

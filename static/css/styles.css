@@ -1,0 +1,242 @@
+body{
+    background: #cbc7ff;
+}
+
+.heading{
+    font-size: 80px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+.desc{
+    margin: 40px 20px 20px 0;
+    text-align: justify;
+}
+
+.first-div{
+    background-color: #413c86;
+    padding-top: 150px; 
+    padding-bottom: 100px;
+    color: white;
+    border-bottom-left-radius: 100%;
+}
+
+.ques{
+    margin-bottom: 40px;
+}
+
+.main-img{
+    height: 100%;
+    width: 100%;
+}
+
+.main-div{
+    position: relative;
+    animation: mymove 1s 1;
+}
+
+.text-div{
+    padding-right: 50px;
+}
+
+#nav-heading{
+    font-size: 40px;
+    font-weight: bolder;
+    color: #fff;
+    padding: 10px 40px;
+}
+
+#nav-link{
+    color: white;
+}
+
+.nav-item a{
+    color: #413c86;
+    font-weight: bolder;
+    padding: 20px 25px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.carousel-indicators {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 15;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 0;
+    list-style: none;
+    margin: 40px;
+    float: right;
+}
+.carousel-indicators li{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-left: auto;
+  }
+  .carousel-indicators .active{
+      background-color: #ff4449;
+  }
+
+/* .liquid{
+    background: url('../img/wave2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+} */
+
+.inline-photo {
+    /* box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2); */
+    opacity: 0;
+    transform: translateY(50px) rotateZ(-5deg);
+    transition: transform 4s .25s cubic-bezier(0,1,.3,1),
+                opacity .3s .25s ease-out;
+    will-change: transform, opacity;
+}
+
+.inline-photo.is-visible {
+    opacity: 1;
+    transform: rotateY(0);
+}
+
+footer ul{
+    list-style: none;
+}
+
+footer ul.footer-nav{
+    padding: 0;
+}
+
+footer ul.footer-nav a{
+    color: white;
+    text-decoration: none;
+}
+
+footer ul.footer-nav li{
+    padding: 5px 0;
+}
+
+.home-subdiv{
+    padding: 40px;
+    background: #565196;
+    box-shadow: 3px 3px 5px #706caa;
+    color: white;
+}
+
+@keyframes mymove {
+    from {transform: translateX(-100px); opacity: 0}
+    to {transform: translateX(0); opacity: 1}
+}
+
+@media (min-width: 992px) and (max-width: 1171px){
+    .heading{
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    .main-img{
+        height: 50%;
+        width: 100%;
+    }
+    .heading{
+        font-size: 55px;
+    }
+    .main-div{
+        text-align: right;
+    }
+    .inner-div{
+        margin: 20px 0;
+    }
+    .first-div{
+        padding-top: 100px;
+    }
+}
+
+@media (min-width: 575px) and (max-width: 767px){
+    .main-img{
+        align-items: end;
+        float: right;
+        height: 80%;
+        width: 80%;
+    }
+    .img-div{
+        height: fit-content;
+    }
+    .text-div{
+        text-align: right;
+    }
+    .main-div{
+        text-align: end;
+    }
+    .heading{
+        font-size: 50px;
+    }
+    .desc{
+        width: 60%;
+        margin-left: auto;
+    }
+    .ques{
+        width: 60%;
+        margin-left: auto;
+    }
+    .inner-div{
+        margin: 30px 0;
+    }
+}
+
+@media (max-width: 575px){
+    .first-div{
+        border-bottom-left-radius: 0;
+        padding-top: 50px;
+    }
+    .inner-div{
+        margin: 4% 0;
+    }
+    .heading{
+        font-size: 50px;
+    }
+    .inline-photo {
+        transform: translateY(50px);
+    }
+}
+
+@media (max-width: 991px){
+    .navbar{
+        background-color: #fff;
+        box-shadow: 2px 2px 5px #aaa9a9;
+    }
+    .navbar-toggle{
+        background-color: #413c86;
+    }
+    .navbar-toggler-icon{
+        background-color: #fff;
+        border-radius: 50%;
+    }
+    .navbar-collapse{
+        padding: 40px 0;
+    }
+    #nav-heading{
+        color: #ff4449;
+        margin-right: auto;
+        padding: 0;
+    }
+    
+    #nav-link{
+        color: #413c86;
+    }
+    .nav-item{
+        padding: 20px;
+    }
+    .nav-item a{
+        color: #413c86;
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 400px){
+    #nav-heading{
+        font-size: 26px;
+    }
+}

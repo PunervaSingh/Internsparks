@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{ 
+    background-color: #e8d0ff8a;
+}
+
+.margin-div{
+    margin: 0;
+}
+#nav-heading{
+    font-size: 40px;
+    font-weight: bolder;
+    color: #1e1b4d;
+    padding: 10px 40px;
+}
+
+.nav-item a{
+    color: #413c86;
+    font-weight: bolder;
+    padding: 20px 25px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+footer ul{
+    list-style: none;
+}
+
+footer ul.footer-nav{
+    padding: 0;
+}
+
+footer ul.footer-nav a{
+    color: white;
+    text-decoration: none;
+}
+
+footer ul.footer-nav li{
+    padding: 5px 0;
+}
+
+.guide-image{
+    height: 100%;
+    width: 100%;
+    box-shadow: 2px 2px 5px #6b6a6a;
+    margin: 40px 0;
+}
+
+.heading1{
+    font-size: 40px;
+    font-weight: bolder;
+    text-align: center;
+    color: #272363;
+}
+
+.heading2{
+    font-size: 35px;
+    font-weight: bolder;
+    margin-top: 20px;
+    color: #272363;
+    text-align: center;
+}
+
+.sidebar{
+    left: 0;
+}
+
+.sidebar-heading{
+    padding-left: 15px;
+}
+
+.sidebar-section {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+
+.sidebar-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.heading-s{
+    font-family: sans-serif;
+    color: #413c86;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+.make-me-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding-left: 15px;
+    padding-top: 35%;
+    padding-bottom: 40%;
+}
+
+.content-section{
+    display: flex; 
+    flex-direction: column; 
+    margin: 50px; 
+    max-width: 300px;
+    padding: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.541); 
+}
+
+.title-section, .content-section-div, .sidebar-section {
+    background: #fff;
+}
+
+.title-section {
+    text-align: center;
+    padding: 50px 15px;
+    margin-bottom: 30px;
+}
+
+.content-section-div h2 {
+    text-align: center;
+    margin: 0;
+    padding-top: 200px;
+}
+
+.book-img{
+    height: 300px; 
+    width: 200px;
+}
+
+
+.wrap-size-lg{
+    margin: 0;
+    width: 100%;
+    padding: 0;
+}
+
+.footer-link {
+    color: white;
+    line-height: 2.2;
+}
+
+.footer-link:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-icon{
+    font-size: 40px;
+    color: white;
+    margin: 0 20px 0 0;
+}
+
+.active {
+    flex: 0 4rem;
+}
+
+.nav_list {
+    margin-top: 1rem;
+    list-style: none;
+}
+
+.list-item {
+    padding: 0.75rem;
+    transition: background 270ms ease;
+    position: relative;
+}
+
+.list-item:hover {
+    background-color: #413c86;
+    color: white;
+    text-decoration: none;
+}
+
+.genre-element{
+    overflow: hidden;
+    gap: 1.8rem;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    color: var(--gray200);
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+}
+
+.genre-element:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.inline-photo {
+    /* box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2); */
+    opacity: 0;
+    transform: translateY(50px) rotateZ(-5deg);
+    transition: transform 2s .25s cubic-bezier(0,1,.3,1),
+                opacity .3s .25s ease-out;
+    will-change: transform, opacity;
+}
+
+.inline-photo.is-visible {
+    opacity: 1;
+    transform: rotateY(0);
+}
+
+/* .side-bar ul{
+    list-style: none;
+}
+
+.side-bar ul li{
+    padding: 10px 0;
+}
+
+.side-bar ul li a{
+    color: #413c86;
+    font-size: 15px;
+}
+
+.side-bar ul li:hover{
+    background: #413c86;
+    color: white;
+}
+
+.side-bar ul li a:hover{
+    color: #fff;
+    text-decoration: none;
+} */
+
+@media (max-width: 991px){
+    .make-me-sticky{
+        display: none;
+    }
+}
+
+@media (max-width: 991px){
+    .navbar{
+        background-color: #fff;
+        box-shadow: 2px 2px 5px #aaa9a9;
+    }
+    .navbar-toggle{
+        background-color: #413c86;
+    }
+    .navbar-toggler-icon{
+        background-color: #fff;
+        border-radius: 50%;
+    }
+    .navbar-collapse{
+        padding: 40px 0;
+    }
+    #nav-heading{
+        color: #ff4449;
+        margin-right: auto;
+        padding: 0;
+    }
+    
+    #nav-link{
+        color: #413c86;
+    }
+    .nav-item{
+        padding: 20px;
+    }
+    .nav-item a{
+        color: #413c86;
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 400px){
+    #nav-heading{
+        font-size: 26px;
+    }
+}

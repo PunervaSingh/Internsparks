@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+
+{% block head %}
+<link rel="stylesheet" href="{{url_for('static', filename='css/contact.css')}}">
+<style>
+    
+</style>
+{% endblock %}
+
+{% block content %}
+<!-- <h1>Contact Page</h1> -->
+<section>
+    <div class="container">
+        <div class="contactInfo">
+            <div>
+                <h2>Contact Info</h2>
+                <ul class="info">
+                    <li>
+                        <span class="contact-icon"><i class="fas fa-map-marker-alt"></i></span>
+                        <span class="contact-desc">XYZ main road <br> Kashmere gate, Delhi <br> 110012</span>
+                    </li>
+                    <li>
+                        <span class="contact-icon"><i class="fas fa-at"></i></span>
+                        <a class="contact-desc" href="mailto:punerva21@gmail.com">lorem@gmail.com</a>
+                    </li>
+                    <li>
+                        <span class="contact-icon"><i class="fas fa-phone-volume"></i></span>
+                        <span class="contact-desc">947-986-6XXX</span>
+                    </li>
+                </ul>
+            </div>
+            <ul class="sci">
+                <li><a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://instagram.com"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://pinterest.com"><i class="fab fa-pinterest-p"></i></a></li>
+                <li><a href="https://linkedin.com"><i class="fab fa-linkedin-in"></i></a></li>
+            </ul>
+        </div>
+        <div class="contactForm">
+            <div class="row contact-inner">
+                <div class="col-lg-5 form-div" style="margin-top: 8%;">
+                    <h2>Send a Message</h2>
+                    <form class="formBox" action="/contact" method="POST">
+                        <div class="inputBox">
+                            <!-- <label>First Name</label> -->
+                            <input type="text" name="name" placeholder="First Name" required>
+                        </div>
+                        <div class="inputBox">
+                            <!-- <label>Email Address</label> -->
+                            <input type="text" name="email" placeholder="Email Address" required>
+                        </div>
+                        <div class="inputBox">
+                            <!-- <label>Mobile Number</label> -->
+                            <input type="text" name="mobile" placeholder="Mobile number" required>
+                        </div>
+                        <div class="inputBox2">
+                            <!-- <label>Write your message here...</label> -->
+                            <textarea name="msg" id="" cols="30" rows="10" placeholder="Write your message here..." required></textarea>
+                        </div>
+                        <div class="inputBox2">
+                            <input type="submit" value="Submit" class="btn btn-primary" method='post'>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-7 liquid">
+                    <img src="{{url_for('static', filename='img/donate2.png')}}" style="height: 100%; width: 100%;" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

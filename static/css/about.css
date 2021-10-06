@@ -1,0 +1,125 @@
+body{
+    background: #dad7fc;
+}
+
+#nav-heading{
+    font-size: 40px;
+    font-weight: bolder;
+    color: #413c86;
+    padding: 10px 40px;
+}
+
+.nav-item a{
+    color: #413c86;
+    font-weight: bolder;
+    padding: 20px 25px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.margin-div{
+    margin-top: 90px;
+}
+
+.inner-div{
+    margin: 5% 0;
+    background: #413c86;
+    color: white;
+    position: relative;
+    animation: mymove 3s 1;
+}
+
+.inner-div2{
+    margin: 5% 0;
+    background: #413c86;
+    color: white;
+    position: relative;
+    animation: mymove2 2s 1;
+}
+
+.inner-div3{
+    margin: 5% 0;
+    background: #413c86;
+    color: white;
+    position: relative;
+    animation: mymove3 1s 1;
+}
+
+footer ul{
+    list-style: none;
+}
+
+footer ul.footer-nav{
+    padding: 0;
+}
+
+footer ul.footer-nav a{
+    color: white;
+    text-decoration: none;
+}
+
+footer ul.footer-nav li{
+    padding: 5px 0;
+}
+
+/* .inner-div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    animation: mymove 2s 1;
+} */
+
+@keyframes mymove {
+    from {transform: translateX(-100px); opacity: 0}
+    to {transform: translateX(0); opacity: 1}
+}
+
+@keyframes mymove2 {
+    from {transform: translateX(-200px); opacity: 0}
+    to {transform: translateX(0); opacity: 1}
+}
+
+@keyframes mymove3 {
+    from {transform: translateX(-300px); opacity: 0}
+    to {transform: translateX(0); opacity: 1}
+}
+
+@media (max-width: 991px){
+    .navbar{
+        background-color: #fff;
+        box-shadow: 2px 2px 5px #aaa9a9;
+    }
+    .navbar-toggle{
+        background-color: #413c86;
+    }
+    .navbar-toggler-icon{
+        background-color: #fff;
+        border-radius: 50%;
+    }
+    .navbar-collapse{
+        padding: 40px 0;
+    }
+    #nav-heading{
+        color: #ff4449;
+        margin-right: auto;
+        padding: 0;
+    }
+    
+    #nav-link{
+        color: #413c86;
+    }
+    .nav-item{
+        padding: 20px;
+    }
+    .nav-item a{
+        color: #413c86;
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 400px){
+    #nav-heading{
+        font-size: 26px;
+    }
+}
