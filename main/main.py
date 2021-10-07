@@ -57,7 +57,7 @@ def contact():
         db.session.add(data)
         db.session.commit()
         flash('Inquer message has been sent successfully...', "success")
-        return remder_template('home.html')
+        return render_template('home.html')
     return render_template('contact.html')
 
 @app.route('/about')
