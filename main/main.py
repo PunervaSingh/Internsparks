@@ -45,21 +45,20 @@ def index():
 
 @app.route('/contact', methods=['GET','POST'])
 def contact():
-    if request.method == 'GET':
-        return render_template('contact.html')
-    else:
+    if request.method == 'POST':
         name = request.form['name']
         email = request.form['email']
         mobile = request.form['mobile']
         msg = request.form['msg']
         # print(name, dealer, msg)
-        # if name == '' or email == '':
-        #     return render_template('contact.html', message='Please enter required field')
-        # data = Contact(name, email, mobile, msg)
-        # db.session.add(data)
-        # db.session.commit()
+        if name == '' or email == '':
+            return render_template('contact.html', message='Please enter required field')
+        data = Contact(name, email, mobile, msg)
+        db.session.add(data)
+        db.session.commit()
         flash('Inquer message has been sent successfully...', "success")
         return render_template('home.html')
+    return render_template('contact.html')
 
 @app.route('/about')
 def about():
