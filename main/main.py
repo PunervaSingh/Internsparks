@@ -21,7 +21,7 @@ ENV = 'dev'
 # app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
-config[config_name].init_app(app)
+config['default'].init_app(app)
 
 class Contact(db.Model):
     __tablename__ = 'contact'
