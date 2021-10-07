@@ -45,7 +45,9 @@ def index():
 
 @app.route('/contact', methods=['GET','POST'])
 def contact():
-    if request.method == 'POST':
+    if request.method == 'GET':
+        return render_template('contact.html')
+    else:
         name = request.form['name']
         email = request.form['email']
         mobile = request.form['mobile']
@@ -58,7 +60,6 @@ def contact():
         db.session.commit()
         flash('Inquer message has been sent successfully...', "success")
         return render_template('home.html')
-    return render_template('contact.html')
 
 @app.route('/about')
 def about():
