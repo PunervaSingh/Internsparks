@@ -4,21 +4,24 @@ keysecret = 'BpIsSYWreMjd2bN4BRKamo5Q'
 from flask import Flask, render_template, request, redirect, session, url_for, flash
 import razorpay
 from flask_sqlalchemy import SQLAlchemy
+from config import config, Config
+
 
 app = Flask(__name__,static_folder = "static", static_url_path='')
 razorpay_client = razorpay.Client(auth=(keyid, keysecret))
 ENV = 'dev'
 
-if ENV == 'dev':
-    app.debug = True
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///internship.db'
-else:
-    app.debug = False
-    app.config['SQLALCHEMY_DATABASE_URI'] = ''
+# if ENV == 'dev':
+#     app.debug = True
+#     app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///internship.db'
+# else:
+#     app.debug = False
+#     app.config['SQLALCHEMY_DATABASE_URI'] = ''
 
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+# app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
+config[config_name].init_app(app)
 
 class Contact(db.Model):
     __tablename__ = 'contact'
