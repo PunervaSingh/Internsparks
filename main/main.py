@@ -34,6 +34,11 @@ class Contact(db.Model):
         self.modile = mobile
         self.msg = msg
 
+@app.errorhandler(500)
+def internal_error(error):
+    flash('Facing Internal server error. Try again later...', "success")
+    return render_template('home.html'),500
+
 @app.route('/', methods=['GET','POST'])
 def index():
     return render_template('home.html')
@@ -52,7 +57,7 @@ def contact():
         db.session.add(data)
         db.session.commit()
         flash('Inquer message has been sent successfully...', "success")
-        return render_template('home.html')
+        return remder_template('home.html')
     return render_template('contact.html')
 
 @app.route('/about')
