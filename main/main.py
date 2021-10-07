@@ -53,9 +53,9 @@ def contact():
         # print(name, dealer, msg)
         if name == '' or email == '':
             return render_template('contact.html', message='Please enter required field')
-        # data = Contact(name, email, mobile, msg)
-        # db.session.add(data)
-        # db.session.commit()
+        data = Contact(name, email, mobile, msg)
+        db.session.add(data)
+        db.session.commit()
         flash('Inquer message has been sent successfully...', "success")
         return render_template('home.html')
     return render_template('contact.html')
