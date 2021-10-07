@@ -5,16 +5,16 @@ from flask import Flask, render_template, request, redirect, session, url_for, f
 import razorpay
 from flask_sqlalchemy import SQLAlchemy
 
-app = Flask(__name__,static_folder = "static", static_url_path='')
+app = Flask(__name__)
 razorpay_client = razorpay.Client(auth=(keyid, keysecret))
 ENV = 'dev'
 
-if ENV == 'dev':
-    app.debug = True
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///internship.db'
-else:
-    app.debug = False
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://volhmwzchxljyz:d600c60f51b6b8148ab697d2e02c98c9b93cfc4f2ac74373c5c342f62800447c@ec2-34-233-187-36.compute-1.amazonaws.com:5432/dbltiienqrsb2k'
+# if ENV == 'dev':
+#     app.debug = True
+#     app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///internship.db'
+# else:
+app.debug = False
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://volhmwzchxljyz:d600c60f51b6b8148ab697d2e02c98c9b93cfc4f2ac74373c5c342f62800447c@ec2-34-233-187-36.compute-1.amazonaws.com:5432/dbltiienqrsb2k'
 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
