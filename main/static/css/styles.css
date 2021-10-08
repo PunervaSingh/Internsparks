@@ -182,7 +182,7 @@ footer ul.footer-nav li{
 @media (max-width: 575px){
     .first-div{
         border-bottom-left-radius: 0;
-        padding-top: 50px;
+        padding-top: 80px;
     }
     .inner-div{
         margin: 4% 0;

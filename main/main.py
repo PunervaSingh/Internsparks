@@ -56,7 +56,7 @@ def contact():
         data = Contact(name, email, mobile, msg)
         db.session.add(data)
         db.session.commit()
-        flash('Inquer message has been sent successfully...', "success")
+        flash('Your message has been sent successfully...', "success")
         return render_template('home.html')
     return render_template('contact.html')
 
